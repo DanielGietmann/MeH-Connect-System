@@ -1,8 +1,12 @@
 {
-    "name": "com.meh.mysqlsystem",
+    "name": "com.meh.mysqlsystem.Editor",
     "rootNamespace": "MeHmysql",
-    "references": [],
-    "includePlatforms": [],
+    "references": [
+        "GUID:6471d1fdcd1374701a907de71cb648a4"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

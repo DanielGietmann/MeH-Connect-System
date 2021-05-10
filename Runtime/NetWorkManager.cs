@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-namespace mehmysql
+namespace MeHmysql
 {
     public class NetWorkManager : MonoBehaviour
     {
