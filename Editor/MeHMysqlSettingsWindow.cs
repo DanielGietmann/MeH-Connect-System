@@ -45,8 +45,7 @@ namespace MeHmysql
 
             if(GUILayout.Button("Save Data"))
             {
-                SaveData();
-                MeHMySqlConnector.CreateDBConString(Server, User, Database, Port, Password);
+                SaveData();               
             }
         }
     }    

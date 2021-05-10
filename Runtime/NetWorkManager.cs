@@ -13,8 +13,7 @@ namespace MeHmysql
         public string Database;
         public string Port;
         public string Password;
-
-
+                        
         private void Awake()
         {
             MeHMySqlConnector.CreateDBConString(Server, User, Database, Port, Password);
