@@ -22,10 +22,12 @@ namespace MeHmysql
                 myGameobject.AddComponent<NetWorkManager>();               
             }
         }
+        /*
         [MenuItem("Tools/MeH Mysql System/SettingsWindow", false)]
         public static void ShowWindow()
         {
             EditorWindow.GetWindow(typeof(MeHMysqlSettingsWindow));
         }
+        */
     }
 }
