@@ -19,7 +19,7 @@ namespace MeHmysql
             }
             else
             {
-                myGameobject.AddComponent<NetWorkManager>();
+                myGameobject.AddComponent<NetWorkManager>();               
             }
         }
         [MenuItem("Tools/MeH Mysql System/SettingsWindow", false)]
