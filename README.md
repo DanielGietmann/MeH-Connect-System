@@ -24,4 +24,4 @@
 
 Daniel Gietmann – daniel@meh-development.de
 
-Distributed under the  Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0) license. See ``LICENSE`` for more information.
+Distributed under the GNU Affero General Public License v3.0 license. See ``LICENSE`` for more information.
