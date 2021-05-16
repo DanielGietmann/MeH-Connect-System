@@ -13,11 +13,21 @@ namespace MeHmysql
         public string Database;
         public string Port;
         public string Password;
+
+        public bool isDebug;
                         
         private void Awake()
         {
             MeHMySqlConnector.CreateDBConString(Server, User, Database, Port, Password);
-        }
 
+            if (isDebug)
+            {
+                MeHMySqlConnector.EnableDebug();
+            }
+            if (!isDebug)
+            {
+                MeHMySqlConnector.DisableDebug();
+            }
+        }
     }
 }

@@ -8,9 +8,25 @@ namespace MeHmysql
     public class MeHMySqlConnector : MonoBehaviour
     {
 
-        static string connString;
+        //Debug mode
+        private static bool isDebug;
+
+        public static void EnableDebug()
+        {
+            isDebug = true;
+            Debug.Log("MYSQL DEBUG is ON");
+        }
+
+        public static void DisableDebug()
+        {
+            isDebug = false;
+            Debug.Log("MYSQL DEBUG is OFF");
+        }
 
 
+        //DB Connection
+
+        private static string connString;
 
         public static void CreateDBConString(string Server, string User, string Database, string Port,string Password)
         {
@@ -24,7 +40,10 @@ namespace MeHmysql
             MySqlConnection conn = new MySqlConnection(connStr);
             try
             {
-                Debug.Log("Connecting to MySQL...");
+                if (isDebug)
+                {
+                    Debug.Log("Connecting to MySQL...");
+                }
                 conn.Open();
 
                 string sql = sqlbefehl;
@@ -38,7 +57,10 @@ namespace MeHmysql
             }
             catch (Exception ex)
             {
-                Debug.LogError(ex.ToString());
+                if (isDebug)
+                {
+                    Debug.LogError(ex.ToString());
+                }
             }
         }
     }
