@@ -1,7 +1,7 @@
 {
-  "name": "com.meh-development.mysql-system",
+  "name": "com.meh-development.connecsystem",
   "version": "0.0.1",
-  "displayName": "MySql System",
+  "displayName": "Connect System",
   "description": "by MeH",
   "unity": "2019.1",
   "unityRelease": "0b5",
