@@ -1,7 +1,8 @@
 using UnityEditor;
 using UnityEngine;
+using MeHConnect.Mysql;
 
-namespace MeHmysql
+namespace MeHConnect
 {
     [CustomEditor(typeof(NetWorkManager))]
     public class NetWorkManagerEditor : Editor

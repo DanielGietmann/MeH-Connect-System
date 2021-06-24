@@ -1,8 +1,8 @@
 {
-    "name": "com.meh.mysqlsystem.Editor",
+    "name": "com.meh.connect.Editor",
     "rootNamespace": "MeHmysql",
     "references": [
-        "GUID:6471d1fdcd1374701a907de71cb648a4"
+        "GUID:0792892985dd54076a1f0e266f76c50a"
     ],
     "includePlatforms": [
         "Editor"

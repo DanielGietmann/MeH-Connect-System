@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using MeHConnect.Mysql;
 
 
-namespace MeHmysql
+namespace MeHConnect.Mysql
 {
     public class NetWorkManager : MonoBehaviour
     {
@@ -19,7 +20,7 @@ namespace MeHmysql
         private void Awake()
         {
             MeHMySqlConnector.CreateDBConString(Server, User, Database, Port, Password);
-
+                        
             if (isDebug)
             {
                 MeHMySqlConnector.EnableDebug();

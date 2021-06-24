@@ -1,14 +1,14 @@
 using UnityEditor;
 using UnityEngine;
-using MeHmysql;
+using MeHConnect.Mysql;
 
 namespace MeHmysql
 {
     public class MenuItems : MonoBehaviour
     {
-        [MenuItem("GameObject/MeH Mysql System/Add Network Manager To Scene", false, 33)]
-        [MenuItem("Assets/MeH Mysql System/Add Network Manager To Scene", false, 33)]
-        [MenuItem("Tools/MeH Mysql System/Add Network Manager To Scene", false, 33)]
+        [MenuItem("GameObject/MeH Connect System/Add Network Manager To Scene", false, 33)]
+        [MenuItem("Assets/MeH Connect System/Add Network Manager To Scene", false, 33)]
+        [MenuItem("Tools/MeH Connect System/Add Network Manager To Scene", false, 33)]
         private static void AddNetworkManagerScripts()
         {
             GameObject myGameobject = new GameObject("NetworkManager");

@@ -1,6 +1,6 @@
 {
-    "name": "com.meh.mysqlsystem",
-    "rootNamespace": "MeHmysql",
+    "name": "com.meh.connect",
+    "rootNamespace": "MeHConnect",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

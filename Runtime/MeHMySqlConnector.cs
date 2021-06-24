@@ -3,7 +3,7 @@ using System;
 using MySql.Data;
 using MySql.Data.MySqlClient;
 
-namespace MeHmysql
+namespace MeHConnect.Mysql
 {
     public class MeHMySqlConnector : MonoBehaviour
     {
