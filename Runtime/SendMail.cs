@@ -5,10 +5,43 @@ using System.Net.Mail;
 using System.Net;
 using System;
 
-namespace MeHConnect.mail
+namespace MeHConnect.Mail
 {
     public class SendMail : MonoBehaviour
     {
+
+        private static string SMTPUSERNAME;
+        private static string SMTPPASSWORD;
+        private static string SMTPHOST;
+        private static int SMTPPORT;
+
+
+        public static void HanldleMailMangager(string SMTP_USERNAME, string SMTP_PASSWORD,string Host,int port)
+        {
+
+            if (SMTP_USERNAME ==null)
+            {
+                Debug.LogError("MEH Mail NO SMPT Username");
+            }
+            if (SMTP_PASSWORD == null)
+            {
+                Debug.LogError("MEH Mail NO SMPT PASSWORD");
+            }
+            if (Host == null)
+            {
+                Debug.LogError("MEH Mail NO SMPT HOST");
+            }        
+
+
+
+            SMTPUSERNAME = SMTP_USERNAME;
+            SMTPPASSWORD = SMTP_PASSWORD;
+            SMTPHOST = Host;
+            SMTPPORT = port;
+
+
+        }
+
 
         void sendEmail(string frommail, string fromname,string toemail, string smtpusername, string smtphost, int smtpserverport ,string smptpassword)
         {

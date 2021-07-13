@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MeHConnect.Mail;
 
-namespace MeHmMeHConnect.mail
+namespace MeHConnect.Mail
 {
     public class SendMailManager : MonoBehaviour
     {
@@ -11,14 +12,15 @@ namespace MeHmMeHConnect.mail
         public string HOST;
         public int PORT;
 
+        public string senderEmail;
+
+
 
         public bool isDebug;
 
         private void Awake()
         {
-
-
-
+            SendMail.HanldleMailMangager(SMTP_USERNAME,SMTP_PASSWORD, HOST, PORT);
         }
     }
 }

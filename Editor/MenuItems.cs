@@ -1,8 +1,9 @@
 using UnityEditor;
 using UnityEngine;
 using MeHConnect.Mysql;
+using MeHConnect.Mail;
 
-namespace MeHmysql
+namespace MeHConnect
 {
     public class MenuItems : MonoBehaviour
     {
@@ -19,7 +20,8 @@ namespace MeHmysql
             }
             else
             {
-                myGameobject.AddComponent<NetWorkManager>();               
+                myGameobject.AddComponent<NetWorkManager>();
+                myGameobject.AddComponent<SendMailManager>();
             }
         }
         /*
